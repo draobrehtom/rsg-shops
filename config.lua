@@ -2,9 +2,11 @@ Config = {}
 
 Config.Products = {
 	["normal"] = {
-		[1] = { name = "water",		price = 2, 	amount = 500, info = {}, type = "item", slot = 1, },
-		[2] = { name = "bread",		price = 2, 	amount = 500, info = {}, type = "item", slot = 2, },
-		[3] = { name = "bandage",	price = 3, 	amount = 500, info = {}, type = "item", slot = 3, },
+		[1] = { name = "water",								price = 2, 	amount = 500, info = {}, type = "item", slot = 1, },
+		[2] = { name = "bread",								price = 2, 	amount = 500, info = {}, type = "item", slot = 2, },
+		[3] = { name = "bandage",							price = 3, 	amount = 500, info = {}, type = "item", slot = 3, },
+		[4] = { name = "weapon_kit_binoculars",				price = 25,	amount = 100, info = {}, type = "item", slot = 4, },
+		[5] = { name = "weapon_kit_binoculars_improved",	price = 50,	amount = 100, info = {}, type = "item", slot = 5 },
 	},
 	["saloon"] = {
 		[1] = { name = "water",		price = 2, 	amount = 500, info = {}, type = "item", slot = 1, },
