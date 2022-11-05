@@ -1,20 +1,21 @@
 Config = {}
 
 Config.Products = {
-    ["normal"] = {
-        [1] = { name = "water",		price = 2, 	amount = 500, info = {}, type = "item", slot = 1, },
-        [2] = { name = "bread",		price = 2, 	amount = 500, info = {}, type = "item", slot = 2, },
-    },
-    ["saloon"] = {
-        [1] = { name = "water",		price = 2, 	amount = 500, info = {}, type = "item", slot = 1, },
-        [2] = { name = "bread",		price = 2, 	amount = 500, info = {}, type = "item", slot = 2, },
+	["normal"] = {
+		[1] = { name = "water",		price = 2, 	amount = 500, info = {}, type = "item", slot = 1, },
+		[2] = { name = "bread",		price = 2, 	amount = 500, info = {}, type = "item", slot = 2, },
+		[3] = { name = "bandage",	price = 3, 	amount = 500, info = {}, type = "item", slot = 3, },
+	},
+	["saloon"] = {
+		[1] = { name = "water",		price = 2, 	amount = 500, info = {}, type = "item", slot = 1, },
+		[2] = { name = "bread",		price = 2, 	amount = 500, info = {}, type = "item", slot = 2, },
 		[3] = { name = "beer",		price = 3, 	amount = 500, info = {}, type = "item", slot = 3, },
 		[4] = { name = "whiskey",	price = 5, 	amount = 500, info = {}, type = "item", slot = 4, },
 		[5] = { name = "coffee",	price = 2, 	amount = 500, info = {}, type = "item", slot = 5, },
-    },
-    ["weapons"] = {
+	},
+	["weapons"] = {
 		-- WEAPONS REVOLVER
-        [1] = 	{ name = "weapon_revolver_cattleman",				price = 50,		amount = 50,	info = {},	type = "weapon",	slot = 1, },
+		[1] = 	{ name = "weapon_revolver_cattleman",				price = 50,		amount = 50,	info = {},	type = "weapon",	slot = 1, },
 		[2] = 	{ name = "weapon_revolver_cattleman_mexican",		price = 127,	amount = 50,	info = {},	type = "weapon",	slot = 2, },
 		[3] = 	{ name = "weapon_revolver_doubleaction_gambler",	price = 190,	amount = 50,	info = {},	type = "weapon",	slot = 3, },
 		[4] = 	{ name = "weapon_revolver_schofield",				price = 192,	amount = 50,	info = {},	type = "weapon",	slot = 4, },
@@ -55,7 +56,7 @@ Config.Products = {
 
 -- shop locations and blips
 Config.Locations = {
-    {	
+	{
 		name = 'Rhodes General Store',
 		location = 'gen-rhodes',
 		products = "normal",
@@ -64,7 +65,7 @@ Config.Locations = {
 		blipscale = 0.2,
 		showblip = true
 	},
-    {	
+	{
 		name = 'Valentine General Store',
 		location = 'gen-valentine',
 		products = "normal",
@@ -73,7 +74,7 @@ Config.Locations = {
 		blipscale = 0.2,
 		showblip = true
 	},
-    {	
+	{
 		name = 'Strawberry General Store',
 		location = 'gen-strawberry',
 		products = "normal",
@@ -82,14 +83,14 @@ Config.Locations = {
 		blipscale = 0.2,
 		showblip = true
 	},
-    {	
+	{
 		name = 'Annesburg General Store',
 		location = 'gen-annesburg',
 		products = "normal",
 		shopcoords = vector3(2931.35, 1365.94, 45.19),
 		showblip = true
 	},
-    {	
+	{
 		name = 'Saint Denis General Store',
 		location = 'gen-stdenis',
 		products = "normal",
@@ -98,7 +99,7 @@ Config.Locations = {
 		blipscale = 0.2,
 		showblip = true
 	},
-    {	
+	{
 		name = 'Tumbleweed General Store',
 		location = 'gen-tumbleweed',
 		products = "normal",
@@ -107,7 +108,7 @@ Config.Locations = {
 		blipscale = 0.2,
 		showblip = true
 	},
-    {	
+	{
 		name = 'Armadillo General Store',
 		location = 'gen-armadillo',
 		products = "normal",
@@ -116,7 +117,7 @@ Config.Locations = {
 		blipscale = 0.2,
 		showblip = true
 	},
-    {	
+	{
 		name = 'Blackwater General Store',
 		location = 'gen-blackwater',
 		products = "normal",
@@ -125,7 +126,7 @@ Config.Locations = {
 		blipscale = 0.2,
 		showblip = true
 	},
-    {	
+	{
 		name = 'Van Horn General Store',
 		location = 'gen-vanhorn',
 		products = "normal",
@@ -134,7 +135,7 @@ Config.Locations = {
 		blipscale = 0.2,
 		showblip = true
 	},
-    {	
+	{
 		name = 'Valentine Gunsmith',
 		location = 'gun-valentine',
 		products = "weapons",
@@ -143,7 +144,7 @@ Config.Locations = {
 		blipscale = 0.2,
 		showblip = true
 	},
-    {	
+	{
 		name = 'Tumbleweed Gunsmith',
 		location = 'gun-tumbleweed',
 		products = "weapons",
@@ -152,7 +153,7 @@ Config.Locations = {
 		blipscale = 0.2,
 		showblip = true
 	},
-    {	
+	{
 		name = 'Saint Denis Gunsmith',
 		location = 'gun-stdenis',
 		products = "weapons",
@@ -161,7 +162,7 @@ Config.Locations = {
 		blipscale = 0.2,
 		showblip = true
 	},
-    {	
+	{
 		name = 'Rhodes Gunsmith',
 		location = 'gun-rhodes',
 		products = "weapons",
@@ -170,7 +171,7 @@ Config.Locations = {
 		blipscale = 0.2,
 		showblip = true
 	},
-    {	
+	{
 		name = 'Annesburg Gunsmith',
 		location = 'gun-annesburg',
 		products = "weapons",
@@ -179,7 +180,7 @@ Config.Locations = {
 		blipscale = 0.2,
 		showblip = true
 	},
-    {	
+	{
 		name = 'Valentine Saloon',
 		location = 'sal-valentine',
 		products = "saloon",
@@ -188,7 +189,7 @@ Config.Locations = {
 		blipscale = 0.2,
 		showblip = true
 	},
-    {
+	{
 		name = 'Tumbleweed Saloon',
 		location = 'sal-tumbleweed',
 		products = "saloon",
@@ -197,7 +198,7 @@ Config.Locations = {
 		blipscale = 0.2,
 		showblip = true
 	},
-    {
+	{
 		name = 'Armadillo Saloon',
 		location = 'sal-armadillo',
 		products = "saloon",
@@ -206,7 +207,7 @@ Config.Locations = {
 		blipscale = 0.2,
 		showblip = true
 	},
-    {
+	{
 		name = 'Blackwater Saloon',
 		location = 'sal-blackwater',
 		products = "saloon",
@@ -215,7 +216,7 @@ Config.Locations = {
 		blipscale = 0.2,
 		showblip = true
 	},
-    {
+	{
 		name = 'Rhodes Saloon',
 		location = 'sal-rhodes',
 		products = "saloon",
@@ -224,7 +225,7 @@ Config.Locations = {
 		blipscale = 0.2,
 		showblip = true
 	},
-    {
+	{
 		name = 'Saint Denis Saloon',
 		location = 'sal-stdenis',
 		products = "saloon",
@@ -233,7 +234,7 @@ Config.Locations = {
 		blipscale = 0.2,
 		showblip = true
 	},
-    {
+	{
 		name = 'Van Horn Saloon',
 		location = 'sal-vanhorn',
 		products = "saloon",
