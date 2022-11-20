@@ -9,6 +9,7 @@ Config.Products = {
 		[5] = { name = "weapon_kit_binoculars_improved",	price = 50,	amount = 100, info = {}, type = "item", slot = 5 },
 		[6] = { name = "horsebrush",						price = 10,	amount = 100, info = {}, type = "item", slot = 6 },
 		[7] = { name = "horselantern",						price = 25,	amount = 100, info = {}, type = "item", slot = 7 },
+		[8] = { name = "goldsmelt",							price = 50,	amount = 100, info = {}, type = "item", slot = 8 },
 	},
 	["saloon"] = {
 		[1] = { name = "water",		price = 2, 	amount = 500, info = {}, type = "item", slot = 1, },
