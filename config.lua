@@ -46,14 +46,16 @@ Config.Products = {
 		[21] = 	{ name = "weapon_shotgun_semiauto",					price = 540,	amount = 50,	info = {},	type = "weapon",	slot = 21, },
 		-- WEAPONS OTHER
 		[22] = 	{ name = "weapon_melee_knife",						price = 75,		amount = 50,	info = {},	type = "weapon",	slot = 22, },
-		[23] = 	{ name = "weapon_lasso",							price = 5,		amount = 500,	info = {},	type = "weapon",	slot = 23, },
+		[23] = 	{ name = "weapon_lasso",							price = 5,		amount = 50,	info = {},	type = "weapon",	slot = 23, },
+		[24] = 	{ name = "weapon_bow",								price = 10,		amount = 50,	info = {},	type = "weapon",	slot = 24, },
+		[25] = 	{ name = "weapon_bow_improved",						price = 30,		amount = 50,	info = {},	type = "weapon",	slot = 25, },
 		-- AMMO
-		[24] = 	{ name = "ammo_revolver",							price = 0.50,	amount = 500,	info = {},	type = "item",		slot = 24, },
-		[25] = 	{ name = "ammo_pistol",								price = 0.50,	amount = 500,	info = {},	type = "item",		slot = 25, },
-		[26] = 	{ name = "ammo_rifle",								price = 0.75,	amount = 500,	info = {},	type = "item",		slot = 26, },
-		[27] = 	{ name = "ammo_repeater",							price = 0.75,	amount = 500,	info = {},	type = "item",		slot = 27, },
-		[28] = 	{ name = "ammo_shotgun",							price = 0.75,	amount = 500,	info = {},	type = "item",		slot = 28, },
-		[29] = 	{ name = "ammo_arrow",								price = 0.10,	amount = 500,	info = {},	type = "item",		slot = 29, },
+		[26] = 	{ name = "ammo_revolver",							price = 0.50,	amount = 500,	info = {},	type = "item",		slot = 26, },
+		[27] = 	{ name = "ammo_pistol",								price = 0.50,	amount = 500,	info = {},	type = "item",		slot = 27, },
+		[28] = 	{ name = "ammo_rifle",								price = 0.75,	amount = 500,	info = {},	type = "item",		slot = 28, },
+		[29] = 	{ name = "ammo_repeater",							price = 0.75,	amount = 500,	info = {},	type = "item",		slot = 29, },
+		[30] = 	{ name = "ammo_shotgun",							price = 0.75,	amount = 500,	info = {},	type = "item",		slot = 30, },
+		[31] = 	{ name = "ammo_arrow",								price = 0.10,	amount = 500,	info = {},	type = "item",		slot = 31, },
 
 	},
 }
