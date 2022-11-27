@@ -2,21 +2,22 @@ Config = {}
 
 Config.Products = {
 	["normal"] = {
-		[1] = { name = "water",								price = 2, 	amount = 500, info = {}, type = "item", slot = 1 },
-		[2] = { name = "bread",								price = 2, 	amount = 500, info = {}, type = "item", slot = 2 },
-		[3] = { name = "bandage",							price = 3, 	amount = 500, info = {}, type = "item", slot = 3 },
-		[4] = { name = "weapon_kit_binoculars",				price = 25,	amount = 100, info = {}, type = "item", slot = 4 },
-		[5] = { name = "weapon_kit_binoculars_improved",	price = 50,	amount = 100, info = {}, type = "item", slot = 5 },
-		[6] = { name = "horsebrush",						price = 10,	amount = 100, info = {}, type = "item", slot = 6 },
-		[7] = { name = "horselantern",						price = 25,	amount = 100, info = {}, type = "item", slot = 7 },
-		[8] = { name = "goldsmelt",							price = 50,	amount = 100, info = {}, type = "item", slot = 8 },
+		[1] = { name = "water",								price = 0.50, 	amount = 500, info = {}, type = "item", slot = 1 },
+		[2] = { name = "bread",								price = 0.50, 	amount = 500, info = {}, type = "item", slot = 2 },
+		[3] = { name = "bandage",							price = 1.00, 	amount = 500, info = {}, type = "item", slot = 3 },
+		[4] = { name = "weapon_kit_binoculars",				price = 25,		amount = 100, info = {}, type = "item", slot = 4 },
+		[5] = { name = "weapon_kit_binoculars_improved",	price = 50,		amount = 100, info = {}, type = "item", slot = 5 },
+		[6] = { name = "horsebrush",						price = 10,		amount = 100, info = {}, type = "item", slot = 6 },
+		[7] = { name = "horselantern",						price = 25,		amount = 100, info = {}, type = "item", slot = 7 },
+		[8] = { name = "goldsmelt",							price = 50,		amount = 100, info = {}, type = "item", slot = 8 },
 	},
 	["saloon"] = {
-		[1] = { name = "water",		price = 2, 	amount = 500, info = {}, type = "item", slot = 1, },
-		[2] = { name = "bread",		price = 2, 	amount = 500, info = {}, type = "item", slot = 2, },
-		[3] = { name = "beer",		price = 3, 	amount = 500, info = {}, type = "item", slot = 3, },
-		[4] = { name = "whiskey",	price = 5, 	amount = 500, info = {}, type = "item", slot = 4, },
-		[5] = { name = "coffee",	price = 2, 	amount = 500, info = {}, type = "item", slot = 5, },
+		[1] = { name = "water",		price = 0.50, 	amount = 500, info = {}, type = "item", slot = 1, },
+		[2] = { name = "bread",		price = 0.50, 	amount = 500, info = {}, type = "item", slot = 2, },
+		[3] = { name = "beer",		price = 0.75, 	amount = 500, info = {}, type = "item", slot = 3, },
+		[4] = { name = "whiskey",	price = 1.00, 	amount = 500, info = {}, type = "item", slot = 4, },
+		[5] = { name = "coffee",	price = 0.50, 	amount = 500, info = {}, type = "item", slot = 5, },
+		[6] = { name = "stew",		price = 0.75, 	amount = 500, info = {}, type = "item", slot = 6, },
 	},
 	["weapons"] = {
 		-- WEAPONS REVOLVER
