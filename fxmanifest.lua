@@ -6,8 +6,7 @@ author 'rexshack and qbcore'
 description 'rsg-shops'
 
 client_scripts {
-	'client/client.lua',
-	'client/npc.lua'
+	'client/client.lua'
 }
 
 server_scripts {
