@@ -11,14 +11,6 @@ Config.Products = {
         [7] = { name = "horselantern",                      price = 25,   amount = 100, info = {}, type = "item", slot = 7 },
         [8] = { name = "goldsmelt",                         price = 50,   amount = 100, info = {}, type = "item", slot = 8 },
     },
-    ["saloon"] = {
-        [1] = { name = "water",   price = 0.50, amount = 500, info = {}, type = "item", slot = 1, },
-        [2] = { name = "bread",   price = 0.50, amount = 500, info = {}, type = "item", slot = 2, },
-        [3] = { name = "beer",    price = 0.75, amount = 500, info = {}, type = "item", slot = 3, },
-        [4] = { name = "whiskey", price = 1.00, amount = 500, info = {}, type = "item", slot = 4, },
-        [5] = { name = "coffee",  price = 0.50, amount = 500, info = {}, type = "item", slot = 5, },
-        [6] = { name = "stew",    price = 0.75, amount = 500, info = {}, type = "item", slot = 6, },
-    },
     ["weapons"] = {
         -- WEAPONS REVOLVER
         [1] = { name = "weapon_revolver_cattleman",            price = 50,  amount = 50,   info = {}, type = "weapon", slot = 1, },
@@ -197,76 +189,6 @@ Config.Locations = {
         products = "weapons",
         shopcoords = vector3(2946.50, 1319.53,44.82),
         blipsprite = 4149098929,
-        blipscale = 0.2,
-        showblip = true,
-        showmarker = true
-    },
-    {
-        name = 'Valentine Saloon',
-        location = 'sal-valentine',
-        products = "saloon",
-        shopcoords = vector3(-311.63, 806.23, 118.98),
-        blipsprite = 1879260108,
-        blipscale = 0.2,
-        showblip = true,
-        showmarker = true
-    },
-    {
-        name = 'Tumbleweed Saloon',
-        location = 'sal-tumbleweed',
-        products = "saloon",
-        shopcoords = vector3(-5517.48, -2907.9, -1.75),
-        blipsprite = 1879260108,
-        blipscale = 0.2,
-        showblip = true,
-        showmarker = true
-    },
-    {
-        name = 'Armadillo Saloon',
-        location = 'sal-armadillo',
-        products = "saloon",
-        shopcoords = vector3(-3701.42, -2594.44, -13.32),
-        blipsprite = 1879260108,
-        blipscale = 0.2,
-        showblip = true,
-        showmarker = true
-    },
-    {
-        name = 'Blackwater Saloon',
-        location = 'sal-blackwater',
-        products = "saloon",
-        shopcoords = vector3(-815.79, -1318.98, 43.68),
-        blipsprite = 1879260108,
-        blipscale = 0.2,
-        showblip = true,
-        showmarker = true
-    },
-    {
-        name = 'Rhodes Saloon',
-        location = 'sal-rhodes',
-        products = "saloon",
-        shopcoords = vector3(1341.89, -1375.03, 80.48),
-        blipsprite = 1879260108,
-        blipscale = 0.2,
-        showblip = true,
-        showmarker = true
-    },
-    {
-        name = 'Saint Denis Saloon',
-        location = 'sal-stdenis',
-        products = "saloon",
-        shopcoords = vector3(2793.8, -1169.19, 47.92),
-        blipsprite = 1879260108,
-        blipscale = 0.2,
-        showblip = true,
-        showmarker = true
-    },
-    {
-        name = 'Van Horn Saloon',
-        location = 'sal-vanhorn',
-        products = "saloon",
-        shopcoords = vector3(2947.97, 526.27, 45.33),
-        blipsprite = 1879260108,
         blipscale = 0.2,
         showblip = true,
         showmarker = true
