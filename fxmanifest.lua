@@ -18,6 +18,6 @@ shared_scripts {
 }
 
 dependencies {
-	'qr-core',
-	'qr-inventory'
+	'rsg-core',
+	'rsg-inventory'
 }

@@ -1,4 +1,4 @@
-local QRCore = exports['qr-core']:GetCoreObject()
+local RSGCore = exports['rsg-core']:GetCoreObject()
 
 RegisterServerEvent('rsg-shops:server:UpdateShopItems')
 AddEventHandler('rsg-shops:server:UpdateShopItems', function(shopType, itemData, amount)
@@ -20,9 +20,9 @@ AddEventHandler('rsg-shops:server:RestockShopItems', function(shopType)
     end
 end)
 
-QRCore.Functions.CreateCallback('rsg-shops:server:getLicenseStatus', function(source, cb)
+RSGCore.Functions.CreateCallback('rsg-shops:server:getLicenseStatus', function(source, cb)
     local src = source
-    local Player = QRCore.Functions.GetPlayer(src)
+    local Player = RSGCore.Functions.GetPlayer(src)
     local licenseTable = Player.PlayerData.metadata["licences"]
 
     if licenseTable.weapon then

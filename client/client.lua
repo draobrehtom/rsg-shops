@@ -1,9 +1,9 @@
-local QRCore = exports['qr-core']:GetCoreObject()
+local RSGCore = exports['rsg-core']:GetCoreObject()
 local store
 
 Citizen.CreateThread(function()
     for store, v in pairs(Config.Locations) do
-        exports['qr-core']:createPrompt(v.location, v.shopcoords, QRCore.Shared.Keybinds['J'], 'Open ' .. v.name, {
+        exports['rsg-core']:createPrompt(v.location, v.shopcoords, RSGCore.Shared.Keybinds['J'], 'Open ' .. v.name, {
             type = 'client',
             event = 'rsg-shops:openshop',
             args = {v.products, v.name},
@@ -43,7 +43,7 @@ AddEventHandler('rsg-shops:openshop', function(shopType, shopName)
     local shop = shopName
     local ShopItems = {}
     ShopItems.items = {}
-    QRCore.Functions.TriggerCallback('rsg-shops:server:getLicenseStatus', function(result)
+    RSGCore.Functions.TriggerCallback('rsg-shops:server:getLicenseStatus', function(result)
         ShopItems.label = shop
         if type == "weapon" then
             if result then
