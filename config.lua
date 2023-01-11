@@ -62,8 +62,7 @@ Config.Locations = {
         shopcoords = vector3(1328.99, -1293.28, 77.02 -0.8),
         blipsprite = 1475879922,
         blipscale = 0.2,
-        showblip = true,
-        showmarker = true
+        showblip = true
     },
     {
         name = 'Valentine General Store',
@@ -72,8 +71,7 @@ Config.Locations = {
         shopcoords = vector3(-322.433, 803.797, 117.882 -0.8),
         blipsprite = 1475879922,
         blipscale = 0.2,
-        showblip = true,
-        showmarker = true
+        showblip = true
     },
     {
         name = 'Strawberry General Store',
@@ -82,16 +80,14 @@ Config.Locations = {
         shopcoords = vector3(-1791.49, -386.87, 160.33 -0.8),
         blipsprite = 1475879922,
         blipscale = 0.2,
-        showblip = true,
-        showmarker = true
+        showblip = true
     },
     {
         name = 'Annesburg General Store',
         location = 'gen-annesburg',
         products = "normal",
         shopcoords = vector3(2931.35, 1365.94, 45.19 -0.8),
-        showblip = true,
-        showmarker = true
+        showblip = true
     },
     {
         name = 'Saint Denis General Store',
@@ -100,8 +96,7 @@ Config.Locations = {
         shopcoords = vector3(2859.81, -1200.37, 49.59 -0.8),
         blipsprite = 1475879922,
         blipscale = 0.2,
-        showblip = true,
-        showmarker = true
+        showblip = true
     },
     {
         name = 'Tumbleweed General Store',
@@ -110,8 +105,7 @@ Config.Locations = {
         shopcoords = vector3(-5487.613, -2938.54, -0.38 -0.8),
         blipsprite = 1475879922,
         blipscale = 0.2,
-        showblip = true,
-        showmarker = true
+        showblip = true
     },
     {
         name = 'Armadillo General Store',
@@ -120,8 +114,7 @@ Config.Locations = {
         shopcoords = vector3(-3685.56, -2622.59, -13.43 -0.8),
         blipsprite = 1475879922,
         blipscale = 0.2,
-        showblip = true,
-        showmarker = true
+        showblip = true
     },
     {
         name = 'Blackwater General Store',
@@ -130,8 +123,7 @@ Config.Locations = {
         shopcoords = vector3(-785.18, -1323.83, 43.88 -0.8),
         blipsprite = 1475879922,
         blipscale = 0.2,
-        showblip = true,
-        showmarker = true
+        showblip = true
     },
     {
         name = 'Van Horn General Store',
@@ -140,8 +132,7 @@ Config.Locations = {
         shopcoords = vector3(3027.03, 561.00, 44.72 -0.8),
         blipsprite = 1475879922,
         blipscale = 0.2,
-        showblip = true,
-        showmarker = true
+        showblip = true
     },
     {
         name = 'Valentine Gunsmith',
@@ -150,8 +141,7 @@ Config.Locations = {
         shopcoords = vector3(-281.97, 781.09,119.52 -0.8),
         blipsprite = 4149098929,
         blipscale = 0.2,
-        showblip = true,
-        showmarker = true
+        showblip = true
     },
     {
         name = 'Tumbleweed Gunsmith',
@@ -160,8 +150,7 @@ Config.Locations = {
         shopcoords = vector3(-5508.14, -2964.33,-0.628 -0.8),
         blipsprite = 4149098929,
         blipscale = 0.2,
-        showblip = true,
-        showmarker = true
+        showblip = true
     },
     {
         name = 'Saint Denis Gunsmith',
@@ -170,8 +159,7 @@ Config.Locations = {
         shopcoords = vector3(2716.42, -1285.42,49.63 -0.8),
         blipsprite = 4149098929,
         blipscale = 0.2,
-        showblip = true,
-        showmarker = true
+        showblip = true
     },
     {
         name = 'Rhodes Gunsmith',
@@ -180,8 +168,7 @@ Config.Locations = {
         shopcoords = vector3(1322.67, -1323.16,77.88 -0.8),
         blipsprite = 4149098929,
         blipscale = 0.2,
-        showblip = true,
-        showmarker = true
+        showblip = true
     },
     {
         name = 'Annesburg Gunsmith',
@@ -190,7 +177,6 @@ Config.Locations = {
         shopcoords = vector3(2946.50, 1319.53,44.82 -0.8),
         blipsprite = 4149098929,
         blipscale = 0.2,
-        showblip = true,
-        showmarker = true
+        showblip = true
     },
 }
