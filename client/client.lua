@@ -3,7 +3,7 @@ local store
 
 Citizen.CreateThread(function()
     for store, v in pairs(Config.Locations) do
-        exports['rsg-core']:createPrompt(v.location, v.shopcoords, RSGCore.Shared.Keybinds['J'], 'Open ' .. v.name, {
+        exports['rsg-core']:createPrompt(v.location, v.shopcoords, RSGCore.Shared.Keybinds['J'],  Lang:t('menu.open') .. v.name, {
             type = 'client',
             event = 'rsg-shops:openshop',
             args = {v.products, v.name},
