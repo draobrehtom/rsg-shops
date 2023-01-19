@@ -1,21 +1,21 @@
 local Translations = {
     error = {
-            var = 'text goes here',
+        var = 'text goes here',
     },
     success = {
-		    var = 'text goes here',
+        var = 'text goes here',
     },
     primary = {
-		    var = 'text goes here',
+        var = 'text goes here',
     },
     menu = {
-            open = 'Abrir ',
+        open = 'Abrir ',
     },
     commands = {
-		    var = 'text goes here',
+        var = 'text goes here',
     },
     progressbar = {
-		    var = 'text goes here',
+        var = 'text goes here',
     },
 }
 
