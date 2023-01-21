@@ -1,6 +1,6 @@
 local Translations = {
     error = {
-        open = 'Open ',
+        var = 'text goes here',
     },
     success = {
         var = 'text goes here',
@@ -9,7 +9,7 @@ local Translations = {
         var = 'text goes here',
     },
     menu = {
-        var = 'text goes here',
+        open = 'Open ',
     },
     commands = {
         var = 'text goes here',
