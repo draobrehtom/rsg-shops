@@ -2,15 +2,20 @@ Config = {}
 
 Config.Products = {
     ["normal"] = {
-        [1] = { name = "water",                             price = 0.50, amount = 500, info = {}, type = "item", slot = 1 },
-        [2] = { name = "bread",                             price = 0.50, amount = 500, info = {}, type = "item", slot = 2 },
-        [3] = { name = "bandage",                           price = 1.00, amount = 500, info = {}, type = "item", slot = 3 },
-        [4] = { name = "weapon_kit_binoculars",             price = 25,   amount = 100, info = {}, type = "item", slot = 4 },
-        [5] = { name = "weapon_kit_binoculars_improved",    price = 50,   amount = 100, info = {}, type = "item", slot = 5 },
-        [6] = { name = "horsebrush",                        price = 10,   amount = 100, info = {}, type = "item", slot = 6 },
-        [7] = { name = "horselantern",                      price = 25,   amount = 100, info = {}, type = "item", slot = 7 },
-        [8] = { name = "goldpan",                           price = 10,   amount = 100, info = {}, type = "item", slot = 8 },
-        [9] = { name = "goldsmelt",                         price = 50,   amount = 100, info = {}, type = "item", slot = 9 },
+        [1] =  { name = "water",                             price = 0.50, amount = 500, info = {}, type = "item", slot = 1 },
+        [2] =  { name = "bread",                             price = 0.50, amount = 500, info = {}, type = "item", slot = 2 },
+        [3] =  { name = "bandage",                           price = 1.00, amount = 500, info = {}, type = "item", slot = 3 },
+        [4] =  { name = "horsebrush",                        price = 10,   amount = 100, info = {}, type = "item", slot = 4 },
+        [5] =  { name = "horselantern",                      price = 25,   amount = 100, info = {}, type = "item", slot = 5 },
+        [6] =  { name = "goldpan",                           price = 10,   amount = 100, info = {}, type = "item", slot = 6 },
+        [7] =  { name = "goldsmelt",                         price = 50,   amount = 100, info = {}, type = "item", slot = 7 },
+        [8] =  { name = "campfire",                          price = 10,   amount = 100, info = {}, type = "item", slot = 8 },
+        [9] =  { name = "shovel",                            price = 5,    amount = 100, info = {}, type = "item", slot = 9 },
+        [10] = { name = "axe",                               price = 5,    amount = 100, info = {}, type = "item", slot = 10 },
+        [11] = { name = "pickaxe",                           price = 5,    amount = 100, info = {}, type = "item", slot = 11 },
+        [12] = { name = "weapon_kit_binoculars",             price = 25,   amount = 100, info = {}, type = "weapon", slot = 12 },
+        [13] = { name = "weapon_kit_binoculars_improved",    price = 50,   amount = 100, info = {}, type = "weapon", slot = 13 },
+        [14] = { name = "weapon_kit_metal_detector",         price = 25,   amount = 100, info = {}, type = "weapon", slot = 14 },
     },
     ["weapons"] = {
         -- WEAPONS REVOLVER
