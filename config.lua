@@ -4,7 +4,7 @@ Config.Products = {
     ["normal"] = {
         [1] =  { name = "water",                             price = 0.50, amount = 500, info = {}, type = "item", slot = 1 },
         [2] =  { name = "bread",                             price = 0.50, amount = 500, info = {}, type = "item", slot = 2 },
-        [3] =  { name = "bandage",                           price = 1.00, amount = 500, info = {}, type = "item", slot = 3 },
+        [3] =  { name = "fieldbandage",                      price = 1.00, amount = 500, info = {}, type = "item", slot = 3 },
         [4] =  { name = "horsebrush",                        price = 10,   amount = 100, info = {}, type = "item", slot = 4 },
         [5] =  { name = "horselantern",                      price = 25,   amount = 100, info = {}, type = "item", slot = 5 },
         [6] =  { name = "goldpan",                           price = 10,   amount = 100, info = {}, type = "item", slot = 6 },
