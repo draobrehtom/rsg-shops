@@ -19,15 +19,3 @@ AddEventHandler('rsg-shops:server:RestockShopItems', function(shopType)
         TriggerClientEvent('rsg-shops:client:RestockShopItems', -1, shopType, randAmount)
     end
 end)
-
-RSGCore.Functions.CreateCallback('rsg-shops:server:getLicenseStatus', function(source, cb)
-    local src = source
-    local Player = RSGCore.Functions.GetPlayer(src)
-    local licenseTable = Player.PlayerData.metadata["licences"]
-
-    if licenseTable.weapon then
-        cb(true)
-    else
-        cb(false)
-    end
-end)
