@@ -133,6 +133,7 @@ Config.Locations = {
         blipscale = 0.2,
         showblip = true
     },
+    --[[
     {
         name = 'Valentine Gunsmith',
         location = 'gun-valentine',
@@ -178,4 +179,5 @@ Config.Locations = {
         blipscale = 0.2,
         showblip = true
     },
+    --]]
 }
