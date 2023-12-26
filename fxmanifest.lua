@@ -4,13 +4,13 @@ rdr3_warning "I acknowledge that this is a prerelease build of RedM, and I am aw
 
 author 'rexshack and qbcore'
 description 'rsg-shops'
-version '1.0.0'
+version '1.0.1'
 
 shared_scripts {
     '@rsg-core/shared/locale.lua',
-    'config.lua',
     'locales/en.lua',
     'locales/*.lua',
+    'config.lua',
 }
 
 client_scripts {
