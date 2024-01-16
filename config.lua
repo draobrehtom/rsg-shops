@@ -11,8 +11,7 @@ Config.Keybind = 'J' -- keybind prompt to open shop
 
 Config.Products = {
     ["normal"] = {
-        [1] =  { name = "water",                             price = 0.50, amount = 500, info = {}, type = "item", slot = 1 },
-        [2] =  { name = "bread",                             price = 0.50, amount = 500, info = {}, type = "item", slot = 2 },
+        [1] = { name = "bread", price = 0.50, amount = 500, info = {}, type = "item", slot = 1 },
     },
 }
 
