@@ -18,6 +18,7 @@ local Translations = {
         var = 'text goes here',
     },
     label = {
+        -- general stores
         store_blip_name = 'General Store',
         val_name_store = 'Valentine General Store',
         rho_name_store = 'Rhodes General Store',
@@ -28,6 +29,12 @@ local Translations = {
         arm_name_store = 'Armadillo General Store',
         bla_name_store = 'Blackwater General Store',
         van_name_store = 'Van Horn General Store',
+        -- weapon shops
+        val_name_gunsmith = 'Valentine Gunsmith',
+        tum_name_gunsmith = 'Tumbleweed Gunsmith',
+        sai_name_gunsmith = 'Saint Denis Gunsmith',
+        rho_name_gunsmith = 'Rhodes Gunsmith',
+        ann_name_gunsmith = 'Annesburg Gunsmith',
     },
 }
 
