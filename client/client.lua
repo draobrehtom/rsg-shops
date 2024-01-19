@@ -1,19 +1,60 @@
 local RSGCore = exports['rsg-core']:GetCoreObject()
 
 Citizen.CreateThread(function()
-    for stores, v in pairs(Config.Locations) do
+    for stores, v in pairs(Config.StoreLocations) do
         exports['rsg-core']:createPrompt(v.location, v.shopcoords, RSGCore.Shared.Keybinds[Config.Keybind],  Lang:t('menu.open') .. v.name, {
             type = 'client',
-            event = 'rsg-shops:openshop',
+            event = 'rsg-shops:client:openstore',
             args = {v.products, v.name},
         })
-        if v.showblip == true then
-            local ShopBlip = Citizen.InvokeNative(0x554D9D53F696D002, 1664425300, v.shopcoords)
-            SetBlipSprite(ShopBlip, joaat(v.blipsprite), true)
-            SetBlipScale(ShopBlip, v.blipscale)
-            Citizen.InvokeNative(0x9CB1A1623062F402, ShopBlip, v.name)
-        end
     end
+end)
+
+-- open store with opening hours
+local OpenStore = function(products, name)
+    local hour = GetClockHours()
+    if (hour < Config.OpenTime) or (hour >= Config.CloseTime) then
+        lib.notify({
+            title = 'Store Closed',
+            description = 'come back after '..Config.OpenTime..'am',
+            type = 'error',
+            icon = 'fa-solid fa-shop',
+            iconAnimation = 'shake',
+            duration = 7000
+        })
+        return
+    end
+    TriggerEvent('rsg-shops:openshop', products, name)
+end
+
+CreateThread(function()
+    while true do
+        local hour = GetClockHours()
+        if (hour < Config.OpenTime) or (hour >= Config.CloseTime) then
+            for _, v in pairs(Config.StoreLocations) do
+                if v.showblip == true then
+                    local StoreBlip = Citizen.InvokeNative(0x554D9D53F696D002, joaat('BLIP_STYLE_DEBUG_RED'), v.shopcoords)
+                    SetBlipSprite(StoreBlip, joaat(v.blipsprite), true)
+                    SetBlipScale(StoreBlip, v.blipscale)
+                    Citizen.InvokeNative(0x9CB1A1623062F402, StoreBlip, v.name..' Closed')
+                end
+            end
+        else
+            for _, v in pairs(Config.StoreLocations) do
+                if v.showblip == true then
+                    local StoreBlip = Citizen.InvokeNative(0x554D9D53F696D002, joaat('BLIP_STYLE_DEBUG_GREEN'), v.shopcoords)
+                    SetBlipSprite(StoreBlip,  joaat(v.blipsprite), true)
+                    SetBlipScale(StoreBlip, v.blipscale)
+                    Citizen.InvokeNative(0x9CB1A1623062F402, StoreBlip, v.name..' Open')
+                end
+            end
+        end
+        Wait(60000) -- every min
+    end
+end)
+
+AddEventHandler('rsg-shops:client:openstore', function(products, name)
+    OpenStore(products, name)
 end)
 
 RegisterNetEvent('rsg-shops:openshop')

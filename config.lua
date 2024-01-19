@@ -1,6 +1,9 @@
 Config = {}
 
+-- settings
 Config.Keybind = 'J' -- keybind prompt to open shop
+Config.OpenTime = 6 -- hrs : 24hour clock
+Config.CloseTime = 18 -- hrs : 24hour clock
 
 Config.Products = {
     ["normal"] = {
@@ -13,7 +16,7 @@ Config.Products = {
 }
 
 -- shop locations and blips
-Config.Locations = {
+Config.StoreLocations = {
     
     -- general store
     
