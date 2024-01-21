@@ -35,18 +35,29 @@ local OpenStore = function(products, name)
     TriggerEvent('rsg-shops:openshop', products, name)
 end
 
+-- get store hours function
+local GetStoreHours = function()
+    local hour = GetClockHours()
+    if (hour < Config.OpenTime) or (hour >= Config.CloseTime) then
+        for k, v in pairs(SpawnedStoreBilps) do
+            Citizen.InvokeNative(0x662D364ABF16DE2F, v, joaat('BLIP_MODIFIER_MP_COLOR_2'))
+        end
+    else
+        for k, v in pairs(SpawnedStoreBilps) do
+            Citizen.InvokeNative(0x662D364ABF16DE2F, v, joaat('BLIP_MODIFIER_MP_COLOR_8'))
+        end
+    end
+end
+
+-- get shop hours on player loading
+RegisterNetEvent('RSGCore:Client:OnPlayerLoaded', function()
+    GetStoreHours()
+end)
+
+-- update shop hourse every min
 CreateThread(function()
     while true do
-        local hour = GetClockHours()
-        if (hour < Config.OpenTime) or (hour >= Config.CloseTime) then
-            for k, v in pairs(SpawnedStoreBilps) do
-                Citizen.InvokeNative(0x662D364ABF16DE2F, v, joaat('BLIP_MODIFIER_MP_COLOR_2'))
-            end
-        else
-            for k, v in pairs(SpawnedStoreBilps) do
-                Citizen.InvokeNative(0x662D364ABF16DE2F, v, joaat('BLIP_MODIFIER_MP_COLOR_8'))
-            end
-        end           
+        GetStoreHours()
         Wait(60000) -- every min
     end       
 end)
