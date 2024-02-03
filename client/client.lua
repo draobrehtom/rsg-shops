@@ -21,7 +21,7 @@ end)
 -- open store with opening hours
 local OpenStore = function(products, name)
     local hour = GetClockHours()
-    if (hour < Config.OpenTime) or (hour >= Config.CloseTime) then
+    if (hour < Config.OpenTime) or (hour >= Config.CloseTime) and not Config.StoreAlwaysOpen then
         lib.notify({
             title = 'Store Closed',
             description = 'come back after '..Config.OpenTime..'am',
@@ -38,7 +38,7 @@ end
 -- get store hours function
 local GetStoreHours = function()
     local hour = GetClockHours()
-    if (hour < Config.OpenTime) or (hour >= Config.CloseTime) then
+    if (hour < Config.OpenTime) or (hour >= Config.CloseTime) and not Config.StoreAlwaysOpen then
         for k, v in pairs(SpawnedStoreBilps) do
             Citizen.InvokeNative(0x662D364ABF16DE2F, v, joaat('BLIP_MODIFIER_MP_COLOR_2'))
         end
@@ -57,8 +57,11 @@ end)
 -- update shop hourse every min
 CreateThread(function()
     while true do
-        GetStoreHours()
-        Wait(60000) -- every min
+        if Config.StoreAlwaysOpen then
+            GetStoreHours()
+            Wait(60000) -- every min
+        end
+        Wait(1000)
     end       
 end)
 

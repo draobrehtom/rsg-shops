@@ -2,6 +2,7 @@ Config = {}
 
 -- settings
 Config.Keybind = 'J' -- keybind prompt to open shop
+Config.StoreAlwaysOpen = true
 Config.OpenTime = 6 -- hrs : 24hour clock
 Config.CloseTime = 18 -- hrs : 24hour clock
 
