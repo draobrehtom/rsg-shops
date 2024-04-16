@@ -20,31 +20,41 @@ end)
 
 -- open store with opening hours
 local OpenStore = function(products, name)
-    local hour = GetClockHours()
-    if (hour < Config.OpenTime) or (hour >= Config.CloseTime) and not Config.StoreAlwaysOpen then
-        lib.notify({
-            title = 'Store Closed',
-            description = 'come back after '..Config.OpenTime..'am',
-            type = 'error',
-            icon = 'fa-solid fa-shop',
-            iconAnimation = 'shake',
-            duration = 7000
-        })
-        return
+    if Config.StoreAlwaysOpen then
+        TriggerEvent('rsg-shops:openshop', products, name)
+    else
+        local hour = GetClockHours()
+        if (hour < Config.OpenTime) or (hour >= Config.CloseTime) then
+            lib.notify({
+                title = 'Store Closed',
+                description = 'come back after '..Config.OpenTime..'am',
+                type = 'error',
+                icon = 'fa-solid fa-shop',
+                iconAnimation = 'shake',
+                duration = 7000
+            })
+            return
+        end
+        TriggerEvent('rsg-shops:openshop', products, name)
     end
-    TriggerEvent('rsg-shops:openshop', products, name)
 end
 
 -- get store hours function
 local GetStoreHours = function()
     local hour = GetClockHours()
-    if (hour < Config.OpenTime) or (hour >= Config.CloseTime) and not Config.StoreAlwaysOpen then
-        for k, v in pairs(SpawnedStoreBilps) do
-            Citizen.InvokeNative(0x662D364ABF16DE2F, v, joaat('BLIP_MODIFIER_MP_COLOR_2'))
-        end
-    else
+    if Config.StoreAlwaysOpen then
         for k, v in pairs(SpawnedStoreBilps) do
             Citizen.InvokeNative(0x662D364ABF16DE2F, v, joaat('BLIP_MODIFIER_MP_COLOR_8'))
+        end
+    else
+        if (hour < Config.OpenTime) or (hour >= Config.CloseTime) then
+            for k, v in pairs(SpawnedStoreBilps) do
+                Citizen.InvokeNative(0x662D364ABF16DE2F, v, joaat('BLIP_MODIFIER_MP_COLOR_2'))
+            end
+        else
+            for k, v in pairs(SpawnedStoreBilps) do
+                Citizen.InvokeNative(0x662D364ABF16DE2F, v, joaat('BLIP_MODIFIER_MP_COLOR_8'))
+            end
         end
     end
 end
