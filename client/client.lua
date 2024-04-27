@@ -1,18 +1,18 @@
 local RSGCore = exports['rsg-core']:GetCoreObject()
 local SpawnedStoreBilps = {}
 
-Citizen.CreateThread(function()
+CreateThread(function()
     for _,v in pairs(Config.StoreLocations) do
-        exports['rsg-core']:createPrompt(v.location, v.shopcoords, RSGCore.Shared.Keybinds[Config.Keybind],  Lang:t('menu.open') .. v.name, {
+        exports['rsg-core']:createPrompt(v.location, v.shopcoords, RSGCore.Shared.Keybinds[Config.Keybind],  Lang:t('client.lang_1') .. v.name, {
             type = 'client',
             event = 'rsg-shops:client:openstore',
             args = {v.products, v.name},
         })
         if v.showblip == true then    
-            local StoreBlip = Citizen.InvokeNative(0x554D9D53F696D002, 1664425300, v.shopcoords)
+            local StoreBlip = BlipAddForCoords(1664425300, v.shopcoords)
             SetBlipSprite(StoreBlip, joaat(v.blipsprite), true)
             SetBlipScale(StoreBlip, v.blipscale)
-            Citizen.InvokeNative(0x9CB1A1623062F402, StoreBlip, v.name)
+            SetBlipName(StoreBlip, v.name)
             table.insert(SpawnedStoreBilps, StoreBlip)
         end
     end
@@ -26,8 +26,8 @@ local OpenStore = function(products, name)
         local hour = GetClockHours()
         if (hour < Config.OpenTime) or (hour >= Config.CloseTime) then
             lib.notify({
-                title = 'Store Closed',
-                description = 'come back after '..Config.OpenTime..'am',
+                title = Lang:t('client.lang_2'),
+                description = Lang:t('client.lang_3')..Config.OpenTime..Lang:t('client.lang_4'),
                 type = 'error',
                 icon = 'fa-solid fa-shop',
                 iconAnimation = 'shake',
@@ -44,16 +44,16 @@ local GetStoreHours = function()
     local hour = GetClockHours()
     if Config.StoreAlwaysOpen then
         for k, v in pairs(SpawnedStoreBilps) do
-            Citizen.InvokeNative(0x662D364ABF16DE2F, v, joaat('BLIP_MODIFIER_MP_COLOR_8'))
+            BlipAddModifier(v, joaat('BLIP_MODIFIER_MP_COLOR_8'))
         end
     else
         if (hour < Config.OpenTime) or (hour >= Config.CloseTime) then
             for k, v in pairs(SpawnedStoreBilps) do
-                Citizen.InvokeNative(0x662D364ABF16DE2F, v, joaat('BLIP_MODIFIER_MP_COLOR_2'))
+                BlipAddModifier(v, joaat('BLIP_MODIFIER_MP_COLOR_2'))
             end
         else
             for k, v in pairs(SpawnedStoreBilps) do
-                Citizen.InvokeNative(0x662D364ABF16DE2F, v, joaat('BLIP_MODIFIER_MP_COLOR_8'))
+                BlipAddModifier(v, joaat('BLIP_MODIFIER_MP_COLOR_8'))
             end
         end
     end
