@@ -13,7 +13,8 @@ Config.CloseTime       = 18 -- hrs : 24hour clock
 ---------------------------------
 Config.Products = {
     ['normal'] = {
-        [1] = { name = 'bread', price = 0.50, amount = 500, info = {}, type = 'item', slot = 1 },
+        [1] = { name = 'consumable_bread_roll',     price = 0.10, amount = 500, info = {}, type = 'item', slot = 1 },
+        [1] = { name = 'consumable_water_filtered', price = 0.10, amount = 500, info = {}, type = 'item', slot = 1 },
     },
     ['weapons'] = {
         [1] = { name = 'weapon_revolver_cattleman',            price = 50,   amount = 100, info = {}, type = 'weapon', slot = 1 },
