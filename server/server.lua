@@ -12,7 +12,7 @@ RegisterNetEvent('rsg-shops:server:openstore', function(products, name, label)
     local itemTable = Config.Products[products]
     exports['rsg-inventory']:CreateShop({
         name = name,
-        label = lable,
+        label = label,
         slots = #itemTable,
         items = itemTable
     })
