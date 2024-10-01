@@ -14,7 +14,7 @@ CreateThread(function()
             local StoreBlip = BlipAddForCoords(1664425300, v.shopcoords)
             SetBlipSprite(StoreBlip, joaat(v.blipsprite), true)
             SetBlipScale(StoreBlip, v.blipscale)
-            SetBlipName(StoreBlip, v.name)
+            SetBlipName(StoreBlip, v.label)
         end
     end
 end)
