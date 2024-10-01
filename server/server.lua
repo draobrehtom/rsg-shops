@@ -9,6 +9,7 @@ RegisterNetEvent('rsg-shops:server:openstore', function(products, name, label)
     if not Player then return end
     local playerjobtype = Player.PlayerData.job.type
     if products == 'armoury' and playerjobtype ~= 'leo' then return end
+    if products == 'medic' and playerjobtype ~= 'medic' then return end
     local itemTable = Config.Products[products]
     exports['rsg-inventory']:CreateShop({
         name = name,

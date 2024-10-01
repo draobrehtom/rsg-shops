@@ -55,6 +55,10 @@ Config.Products = {
         [1] = { name = 'consumable_bread_roll',     price = 0.10, amount = 500, info = {}, type = 'item', slot = 1 },
         [2] = { name = 'consumable_water_filtered', price = 0.10, amount = 500, info = {}, type = 'item', slot = 2 },
     },
+    ['medic'] = {
+        [1] = {name = 'bandage',  price = 0, amount = 500, info = {}, type = 'item', slot = 1},
+        [2] = {name = 'firstaid', price = 0, amount = 500, info = {}, type = 'item', slot = 2}
+    },
 }
 
 ---------------------------------
