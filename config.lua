@@ -51,6 +51,10 @@ Config.Products = {
         [2] = { name = 'horse_lantern',        price = 10, amount = 500,  info = {}, type = 'item', slot = 2, },
         [3] = { name = 'consumable_sugarcube', price = 1,  amount = 500, info = {}, type = 'item', slot = 3, },
     },
+    ['prison'] = {
+        [1] = { name = 'consumable_bread_roll',     price = 0.10, amount = 500, info = {}, type = 'item', slot = 1 },
+        [2] = { name = 'consumable_water_filtered', price = 0.10, amount = 500, info = {}, type = 'item', slot = 2 },
+    },
 }
 
 ---------------------------------
