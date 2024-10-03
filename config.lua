@@ -3,61 +3,61 @@ Config = {}
 ---------------------------------
 -- settings
 ---------------------------------
-Config.Keybind         = 'J' -- keybind prompt to open shop
+Config.Keybind = 'J' -- keybind prompt to open shop
 
 ---------------------------------
 -- shop items
 ---------------------------------
 Config.Products = {
     ['normal'] = {
-        [1] = { name = 'consumable_bread_roll',     price = 0.10, amount = 500, info = {}, type = 'item', slot = 1 },
-        [2] = { name = 'consumable_water_filtered', price = 0.10, amount = 500, info = {}, type = 'item', slot = 2 },
+        { name = 'bread', amount = 50, price = 0.10 },
+        { name = 'water', amount = 50, price = 0.10 },
     },
     ['weapons'] = {
-        [1] = { name = 'weapon_revolver_cattleman',            price = 50,   amount = 100, info = {}, type = 'weapon', slot = 1 },
-        [2] = { name = 'weapon_revolver_doubleaction',         price = 127,  amount = 100, info = {}, type = 'weapon', slot = 2 },
-        [3] = { name = 'weapon_revolver_doubleaction_gambler', price = 190,  amount = 100, info = {}, type = 'weapon', slot = 3 },
-        [4] = { name = 'weapon_revolver_lemat',                price = 317,  amount = 100, info = {}, type = 'weapon', slot = 4 },
-        [5] = { name = 'weapon_revolver_navy',                 price = 275,  amount = 100, info = {}, type = 'weapon', slot = 5 },
-        [6] = { name = 'weapon_revolver_schofield',            price = 192,  amount = 100, info = {}, type = 'weapon', slot = 6 },
-        [7] = { name = 'weapon_pistol_mauser',                 price = 600,  amount = 100, info = {}, type = 'weapon', slot = 7 },
-        [8] = { name = 'weapon_pistol_semiauto',               price = 537,  amount = 100, info = {}, type = 'weapon', slot = 8 },
-        [9] = { name = 'weapon_pistol_volcanic',               price = 270,  amount = 100, info = {}, type = 'weapon', slot = 9 },
-        [10] = { name = 'weapon_rifle_boltaction',             price = 216,  amount = 100, info = {}, type = 'weapon', slot = 10 },
-        [11] = { name = 'weapon_rifle_elephant',               price = 580,  amount = 100, info = {}, type = 'weapon', slot = 11 },
-        [12] = { name = 'weapon_rifle_springfield',            price = 156,  amount = 100, info = {}, type = 'weapon', slot = 12 },
-        [13] = { name = 'weapon_rifle_varmint',                price = 72,   amount = 100, info = {}, type = 'weapon', slot = 13 },
-        [14] = { name = 'weapon_repeater_carbine',             price = 90,   amount = 100, info = {}, type = 'weapon', slot = 14 },
-        [15] = { name = 'weapon_repeater_evans',               price = 300,  amount = 100, info = {}, type = 'weapon', slot = 15 },
-        [16] = { name = 'weapon_repeater_winchester',          price = 243,  amount = 100, info = {}, type = 'weapon', slot = 16 },
-        [17] = { name = 'weapon_repeater_henry',               price = 348,  amount = 100, info = {}, type = 'weapon', slot = 17 },
-        [18] = { name = 'weapon_sniperrifle_rollingblock',     price = 411,  amount = 100, info = {}, type = 'weapon', slot = 18 },
-        [19] = { name = 'weapon_sniperrifle_carcano',          price = 456,  amount = 100, info = {}, type = 'weapon', slot = 19 },
-        [20] = { name = 'ammo_revolver',                       price = 1,    amount = 100, info = {}, type = 'item',   slot = 20 },
-        [21] = { name = 'ammo_pistol',                         price = 1,    amount = 100, info = {}, type = 'item',   slot = 21 },
-        [22] = { name = 'ammo_rifle',                          price = 1,    amount = 100, info = {}, type = 'item',   slot = 22 },
-        [23] = { name = 'ammo_repeater',                       price = 1,    amount = 100, info = {}, type = 'item',   slot = 23 },
-        [24] = { name = 'ammo_rifle_elephant',                 price = 1,    amount = 100, info = {}, type = 'item',   slot = 24 },
-        [25] = { name = 'ammo_varmint',                        price = 1,    amount = 100, info = {}, type = 'item',   slot = 25 },
+        { name = 'weapon_revolver_cattleman',            amount = 1, price = 50 },
+        { name = 'weapon_revolver_doubleaction',         amount = 1, price = 127 },
+        { name = 'weapon_revolver_doubleaction_gambler', amount = 1, price = 190 },
+        { name = 'weapon_revolver_lemat',                amount = 1, price = 317 },
+        { name = 'weapon_revolver_navy',                 amount = 1, price = 275 },
+        { name = 'weapon_revolver_schofield',            amount = 1, price = 192 },
+        { name = 'weapon_pistol_mauser',                 amount = 1, price = 600 },
+        { name = 'weapon_pistol_semiauto',               amount = 1, price = 537 },
+        { name = 'weapon_pistol_volcanic',               amount = 1, price = 270 },
+        { name = 'weapon_rifle_boltaction',              amount = 1, price = 216 },
+        { name = 'weapon_rifle_elephant',                amount = 1, price = 580 },
+        { name = 'weapon_rifle_springfield',             amount = 1, price = 156 },
+        { name = 'weapon_rifle_varmint',                 amount = 1, price = 72 },
+        { name = 'weapon_repeater_carbine',              amount = 1, price = 90 },
+        { name = 'weapon_repeater_evans',                amount = 1, price = 300 },
+        { name = 'weapon_repeater_winchester',           amount = 1, price = 243 },
+        { name = 'weapon_repeater_henry',                amount = 1, price = 348 },
+        { name = 'weapon_sniperrifle_rollingblock',      amount = 1, price = 411 },
+        { name = 'weapon_sniperrifle_carcano',           amount = 1, price = 456 },
+        { name = 'ammo_revolver',                        amount = 10, price = 1 },
+        { name = 'ammo_pistol',                          amount = 10, price = 1 },
+        { name = 'ammo_rifle',                           amount = 10, price = 1 },
+        { name = 'ammo_repeater',                        amount = 10, price = 1 },
+        { name = 'ammo_rifle_elephant',                  amount = 10, price = 1 },
+        { name = 'ammo_varmint',                         amount = 10, price = 1 },
     },
     ['armoury'] = {
-        [1] = { name = 'weapon_revolver_cattleman',  price = 0, amount = 10, info = {}, type = 'weapon', slot = 1 },
-        [2] = { name = 'weapon_repeater_winchester', price = 0, amount = 10, info = {}, type = 'weapon', slot = 2 },
-        [3] = { name = 'ammo_revolver',              price = 0, amount = 10, info = {}, type = 'item',   slot = 3 },
-        [4] = { name = 'ammo_repeater',              price = 0, amount = 10, info = {}, type = 'item',   slot = 4 },
+        { name = 'weapon_revolver_cattleman',  amount = 1, price = 0 },
+        { name = 'weapon_repeater_winchester', amount = 1, price = 0 },
+        { name = 'ammo_revolver',              amount = 10, price = 0 },
+        { name = 'ammo_repeater',              amount = 10, price = 0 },
     },
     ['horse'] = {
-        [1] = { name = 'horse_brush',          price = 5,  amount = 500,  info = {}, type = 'item', slot = 1, },
-        [2] = { name = 'horse_lantern',        price = 10, amount = 500,  info = {}, type = 'item', slot = 2, },
-        [3] = { name = 'consumable_sugarcube', price = 1,  amount = 500, info = {}, type = 'item', slot = 3, },
+        { name = 'horse_brush',   amount = 50, price = 5 },
+        { name = 'horse_lantern', amount = 50, price = 10 },
+        { name = 'sugarcube',     amount = 50, price = 1 },
     },
     ['prison'] = {
-        [1] = { name = 'consumable_bread_roll',     price = 0.10, amount = 500, info = {}, type = 'item', slot = 1 },
-        [2] = { name = 'consumable_water_filtered', price = 0.10, amount = 500, info = {}, type = 'item', slot = 2 },
+        { name = 'bread', amount = 50, price = 0.10 },
+        { name = 'water', amount = 50, price = 0.10 },
     },
     ['medic'] = {
-        [1] = {name = 'bandage',  price = 0, amount = 500, info = {}, type = 'item', slot = 1},
-        [2] = {name = 'firstaid', price = 0, amount = 500, info = {}, type = 'item', slot = 2}
+        { name = 'bandage',  amount = 50, price = 0 },
+        { name = 'firstaid', amount = 50, price = 0 }
     },
 }
 
