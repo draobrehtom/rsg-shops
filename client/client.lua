@@ -1,11 +1,12 @@
 local RSGCore = exports['rsg-core']:GetCoreObject()
+lib.locale{}
 
 -------------------------
 -- prompts & blips
 -------------------------
 CreateThread(function()
     for _,v in pairs(Config.StoreLocations) do
-        exports['rsg-core']:createPrompt(v.name, v.shopcoords, RSGCore.Shared.Keybinds[Config.Keybind], Lang:t('client.lang_1') .. v.label, {
+        exports['rsg-core']:createPrompt(v.name, v.shopcoords, RSGCore.Shared.Keybinds[Config.Keybind], locale('lang_1') .. v.label, {
             type = 'server',
             event = 'rsg-shops:server:openstore',
             args = {v.products, v.name, v.label},
