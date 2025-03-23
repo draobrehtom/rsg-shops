@@ -7,6 +7,14 @@ Config.Keybind = 'J' -- keybind prompt to open shop
 
 ---------------------------------
 -- shop items
+
+-- amount: default stock (remove to enable unlimited stock)
+-- buyPrice: enables selling items to shop
+-- maxStock: limits how much items players can sell to shop
+-- minQuality: minimum quality that can be sold to shop (default 1)
+-- restock: amount of items to be restocked per restock cycle
+
+-- example: { name = 'bread', amount = 50, price = 0.10, buyPrice = 0.05, maxStock = 100, minQuality = 50, restock = 10 },
 ---------------------------------
 Config.Products = {
     ['normal'] = {
@@ -63,6 +71,8 @@ Config.Products = {
 
 ---------------------------------
 -- shop locations and blips
+
+-- persistentStock (true/false): enables stock to persist over server restart
 ---------------------------------
 Config.StoreLocations = {
     ---------------------------------
@@ -75,7 +85,8 @@ Config.StoreLocations = {
         shopcoords = vector3(1328.99, -1293.28, 77.02 -0.8),
         blipsprite = 'blip_shop_store',
         blipscale = 0.2,
-        showblip = true
+        showblip = true,
+        persistentStock = false,
     },
     {
         label = 'Valentine General Store',
@@ -84,7 +95,8 @@ Config.StoreLocations = {
         shopcoords = vector3(-322.433, 803.797, 117.882 -0.8),
         blipsprite = 'blip_shop_store',
         blipscale = 0.2,
-        showblip = true
+        showblip = true,
+        persistentStock = false,
     },
     {
         label = 'Strawberry General Store',
@@ -93,7 +105,8 @@ Config.StoreLocations = {
         shopcoords = vector3(-1791.49, -386.87, 160.33 -0.8),
         blipsprite = 'blip_shop_store',
         blipscale = 0.2,
-        showblip = true
+        showblip = true,
+        persistentStock = false,
     },
     {
         label = 'Annesburg General Store',
@@ -102,7 +115,8 @@ Config.StoreLocations = {
         shopcoords = vector3(2931.35, 1365.94, 45.19 -0.8),
         blipsprite = 'blip_shop_store',
         blipscale = 0.2,
-        showblip = true
+        showblip = true,
+        persistentStock = false,
     },
     {
         label = 'Saint Denis General Store',
@@ -111,7 +125,8 @@ Config.StoreLocations = {
         shopcoords = vector3(2859.81, -1200.37, 49.59 -0.8),
         blipsprite = 'blip_shop_store',
         blipscale = 0.2,
-        showblip = true
+        showblip = true,
+        persistentStock = false,
     },
     {
         label = 'Tumbleweed General Store',
@@ -120,7 +135,8 @@ Config.StoreLocations = {
         shopcoords = vector3(-5487.613, -2938.54, -0.38 -0.8),
         blipsprite = 'blip_shop_store',
         blipscale = 0.2,
-        showblip = true
+        showblip = true,
+        persistentStock = false,
     },
     {
         label = 'Armadillo General Store',
@@ -129,7 +145,8 @@ Config.StoreLocations = {
         shopcoords = vector3(-3685.56, -2622.59, -13.43 -0.8),
         blipsprite = 'blip_shop_store',
         blipscale = 0.2,
-        showblip = true
+        showblip = true,
+        persistentStock = false,
     },
     {
         label = 'Blackwater General Store',
@@ -138,7 +155,8 @@ Config.StoreLocations = {
         shopcoords = vector3(-785.18, -1323.83, 43.88 -0.8),
         blipsprite = 'blip_shop_store',
         blipscale = 0.2,
-        showblip = true
+        showblip = true,
+        persistentStock = false,
     },
     {
         label = 'Van Horn General Store',
@@ -147,7 +165,8 @@ Config.StoreLocations = {
         shopcoords = vector3(3027.03, 561.00, 44.72 -0.8),
         blipsprite = 'blip_shop_store',
         blipscale = 0.2,
-        showblip = true
+        showblip = true,
+        persistentStock = false,
     },
     ---------------------------------
     -- gunsmith
@@ -159,7 +178,8 @@ Config.StoreLocations = {
         shopcoords = vector3(-281.24, 780.71, 119.53),
         blipsprite = 'blip_shop_gunsmith',
         blipscale = 0.2,
-        showblip = true
+        showblip = true,
+        persistentStock = false,
     },
     {
         label = 'Tumbleweed Gunsmith',
@@ -168,7 +188,8 @@ Config.StoreLocations = {
         shopcoords = vector3(-5508.18, -2964.27, -0.63),
         blipsprite = 'blip_shop_gunsmith',
         blipscale = 0.2,
-        showblip = true
+        showblip = true,
+        persistentStock = false,
     },
     {
         label = 'Saint Denis Gunsmith',
@@ -177,7 +198,8 @@ Config.StoreLocations = {
         shopcoords = vector3(2716.42, -1285.42, 49.63),
         blipsprite = 'blip_shop_gunsmith',
         blipscale = 0.2,
-        showblip = true
+        showblip = true,
+        persistentStock = false,
     },
     {
         label = 'Rhodes Gunsmith',
@@ -186,7 +208,8 @@ Config.StoreLocations = {
         shopcoords = vector3(1322.75, -1321.47, 77.89),
         blipsprite = 'blip_shop_gunsmith',
         blipscale = 0.2,
-        showblip = true
+        showblip = true,
+        persistentStock = false,
     },
     {
         label = 'Annesburg Gunsmith',
@@ -195,7 +218,8 @@ Config.StoreLocations = {
         shopcoords = vector3(2946.50, 1319.53, 44.82),
         blipsprite = 'blip_shop_gunsmith',
         blipscale = 0.2,
-        showblip = true
+        showblip = true,
+        persistentStock = false,
     },
 
 }
