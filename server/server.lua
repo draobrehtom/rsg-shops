@@ -28,7 +28,7 @@ RegisterNetEvent('rsg-shops:server:openstore', function(products, name, label)
     exports['rsg-inventory']:CreateShop({
         name = name,
         label = label,
-        slots = #itemTable,
+        slots = itemTable and #itemTable or 0,
         items = itemTable,
     })
     
