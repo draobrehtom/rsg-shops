@@ -54,11 +54,6 @@ Config.Products = {
         { name = 'ammo_box_revolver',          amount = 10, price = 0 },
         { name = 'ammo_box_repeater',          amount = 10, price = 0 },
     },
-    ['horse'] = {
-        { name = 'horse_brush',   amount = 50, price = 5 },
-        { name = 'horse_lantern', amount = 50, price = 10 },
-        { name = 'sugarcube',     amount = 50, price = 1 },
-    },
     ['prison'] = {
         { name = 'bread', amount = 50, price = 0.10 },
         { name = 'water', amount = 50, price = 0.10 },
